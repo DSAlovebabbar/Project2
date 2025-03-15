@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800&h=500&fit=crop" alt="Nature">
+                <div class="caption">Beautiful Nature</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1552083974-186346191183?w=800&h=500&fit=crop" alt="Mountains">
+                <div class="caption">Majestic Mountains</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1515442261605-65987783cb6a?w=800&h=500&fit=crop" alt="Beach">
+                <div class="caption">Sunny Beach</div>
+            </div>
+        </div>
+        <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="next" onclick="changeSlide(1)">&#10095;</div>
+    </div>
+
+    <!-- Thumbnail Navigation -->
+    <div class="thumbnail-container">
+        <img class="thumbnail active" src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=60&h=40&fit=crop" onclick="selectSlide(0)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1552083974-186346191183?w=60&h=40&fit=crop" onclick="selectSlide(1)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1515442261605-65987783cb6a?w=60&h=40&fit=crop" onclick="selectSlide(2)">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
